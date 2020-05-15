@@ -141,6 +141,7 @@ body .title-container {
   width: 75%;
   margin: 0 10%;
   padding: 0 2%;
+  margin-bottom: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,26 +173,34 @@ body .title-container .second .insec button {
   color: darkgray;
 }
 body .artists-container {
-  border: solid black;
+  border-top: solid gray;
   display: flex;
   flex-wrap: row;
   justify-content: center;
-  width: 100%;
+  width: 85%;
+  margin: 0 7%;
 }
 body .artists-container .artist {
-  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2% 0% 0% 0%;
+  width: 33%;
   margin: 0 5%;
   border: solid black;
   width: 100% display: flex; flex-direction: row; justify-content: center;;
 }
 body .artists-container .artist img {
+  border-radius: 3%;
   width: 100%;
 }
 body .artists-container .artist .bio {
-  align-items: center;
   border: solid black;
   width: 100%;
 }
 body .artists-container .artist a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4rem;
   border: solid black;
 }
