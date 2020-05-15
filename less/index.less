@@ -1,0 +1,101 @@
+@import "variables.less";
+@import "cta.less";
+@import "general.less";
+@import "main.less";
+@import "navigation.less";
+@import "reset.less";
+@import "mixins.less";
+// Second sprint
+
+body{
+    width: 100%;
+    border: solid black;
+    header{
+        
+        .flex0();
+            nav{
+                    
+                .flexone();
+                    width: 25%;
+                  
+                    a{ 
+                        margin-top: 15%;
+                        margin-bottom: 10% ;
+                        border-right: solid gray;
+                        color: black;
+                        text-align: center;
+                        width: 35%;
+                        font-size: @font0;
+                        text-decoration: none;
+                           
+                            
+                        } 
+                         
+            }
+           
+    }
+
+    .title-container{
+       
+        height: 80vh;
+        text-align: center;
+        width: 75%;
+        margin: 0 10%;
+        padding: 0 2%;
+       .flextwo(); 
+        
+
+            .second{
+                text-align: center;
+                background-position: center;
+                width: 100%;
+                height: 150vh;
+                background-size: auto;
+                background-image:url("https://github.com/khwanchaiwill/50-Influential-Artists/blob/master/assets/home.png?raw=true");
+                
+                .insec{
+                    color: white;
+                    margin: 15% 0 0 0;
+                    
+                    font-size: 5rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;                    
+                    align-items: center;                 
+                    button{
+                        .btn();
+                    }              
+                }
+            }// this close second class
+    }
+
+    .artists-container{
+        border: solid black;
+        display: flex;
+        flex-wrap: row;
+        justify-content: center;
+        width: 100%;
+        .artist{
+            
+            width: 25%;
+            margin: 0 5%;
+            img{
+                width: 100%;
+            }
+            border: solid black;
+            width:100%
+            .flex0();
+
+            .bio{
+                align-items: center;
+                border: solid black;
+                width: 100%;
+            }
+            a{
+                border: solid black;
+                
+            }        
+        }
+    }
+
+}//this close wholebody
