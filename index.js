@@ -207,10 +207,17 @@ const artists = [
 
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
+// const practice = artists[0];
+console.log(artists[0].name);
+console.log(artists[0].bio);
 
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+
+artists[8].name = 'Vincent Van Gogh';
+console.log(artists[8]);
+
 
 
 
@@ -222,10 +229,11 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-    /* code here */
+function getArtistByIndex(id, name) { 
+  const getbyindex = artists[0];
+    return `The artist at index ${getbyindex.id} is ${getbyindex.name}`;
   }
-  
+  console.log(getArtistByIndex(artists,artists.name));
   /**
 
 
@@ -237,24 +245,29 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
+function removeArtist(remove,art) {  
+ const removeds = artists[0];
+ artists.shift(artists);
+ return `${removeds.name}`
+}
+console.log(removeArtist(artists.name, 0));
   /**
-
+   /**
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
-
-    /* Code here */
-
+function lotsOfArt(painted){
+  for(let i = 0; i < artists.length; i++){
+    // console.log(artists[i].paintings);
+  if (artists[i].paintings >= 100){  
+    console.log(artists[i].name);    
   }
+ }  
+}  
+lotsOfArt(artists.name);
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
-
 id: 21
 name: Your Name Here, 
 years: Your Birth Year - current day,
@@ -262,12 +275,20 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(you){
+ const newArray = {
+   id: 20,
+  name: 'Khwanchai Phaipha',
+  years: '1985-2020',
+  genre: 'Web Design',
+  nationality: 'Thailand',
+  bio: 'The JavaScripst is really difficult, give me a lot of headache, but I will not give up',
+ }
+ artists.push(newArray);
+ return `${newArray.name}`
 
-    /* Code here */
-
-  }
-
+}
+console.log(addArtist(artists));
 
 
 
@@ -276,11 +297,15 @@ function addArtist(/* Code here */){
 
 /* STRETCH 1: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */){
-
-    /* Code here */
-
-  }
+// function get20s(century){
+//   for( let i = 0; i < artists.length; i++){
+//     // console.log(artists[i].years);
+//    if ((artists[i].years >='1800-1900')){
+//       console.log(artists[i].years);
+//     }
+//   }
+//   }
+//  get20s(artists.name);
 
 /* STRETCH 2: Programtically console.log HTML element structure 
 
